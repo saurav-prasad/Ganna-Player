@@ -1,0 +1,432 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(106deg, #ab2222, #f056a9, #cde42c); */
+    background-color: #1e1d1f;
+    /* background-image: url(./img/bg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(2px); */
+}
+
+* {
+    transition: all 0.05s ease-in-out;
+    margin: 0;
+    padding: 0%;
+}
+
+ul {
+
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation bar */
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(186deg, #4cea4c, #fa840a, #733fc7); */
+    background-color: rgb(32 32 32);
+
+}
+
+nav ul {
+    color: white;
+    padding: 7px 0px;
+    justify-content: left;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+#logoImg {
+    margin-left: 10px;
+    width: 34px;
+    height: 32px;
+}
+
+nav ul li h1 {
+    font-family: fantasy;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+
+/* main */
+main {}
+
+.container {
+    /* border: 4px solid black; */
+    /* height: 100vh; */
+    display: flex;
+    /* width: 95vw;
+    margin: auto; */
+
+}
+
+/* Musics list */
+.song {
+    /* position: relative; */
+    font-family: fantasy;
+    color: black;
+    padding: 6px 4px;
+    background: linear-gradient(172deg, #86b6e9, #c4cbda, #0d2659);
+    display: inline-block;
+    align-items: center;
+    width: 69.56%;
+    font-weight: 0;
+    font-family: cursive;
+}
+
+.songList {
+    margin: 7px 4px;
+}
+
+.songItems {
+    background-color: #e0d7d7;
+    border-radius: 14px;
+}
+
+.songCoverImg {
+    cursor: default;
+    width: 56px;
+    border-radius: 7px;
+    height: 54px;
+    margin-right: 10px;
+}
+
+.songDetail {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.songName {}
+
+.songPlayDuration {
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.playPause {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.songDuration {
+    margin-left: 9px;
+    width: 10%;
+    font-family: ui-rounded;
+    font-weight: 500;
+    text-align: right;
+    font-size: 13px;
+    padding-right: 10px;
+}
+
+/* Controller */
+.controller {
+    flex-direction: column;
+    background: linear-gradient(233deg, red, #5f85b3, #2f3a58);
+    height: 100vh;
+    position: fixed;
+    top: 49px;
+    right: 0;
+    display: inline-block;
+    width: 30%;
+
+}
+
+
+.cntrl {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.controller h1 {
+
+    font-size: 2.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#controllName {
+    border-radius: 30px;
+    width: 75%;
+}
+
+.togglePlay {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#cntrlImg {
+    margin-bottom: 30px;
+}
+
+.controlImg {
+    box-shadow: 0px 0px 13px 0px #311ec0;
+    width: 18vw;
+    height: 18vw;
+    border-radius: 100%;
+}
+
+.shuffleSection {
+    width: 100%;
+    font-size: 2.7rem;
+}
+
+
+.shuffleSection li {
+    justify-content: end;
+    height: 50px;
+}
+
+.shuffleSection li span {
+    user-select: none;
+    cursor: pointer;
+}
+
+.cntrl input {
+    margin-bottom: 3px;
+    margin: 10px 0px;
+    cursor: grab;
+    width: 100%;
+}
+
+/* Song timing */
+.duration {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.time {
+    font-size: 13px;
+    color: white;
+}
+
+.songControl {
+    width: 100%;
+}
+
+.songControlList {
+    justify-content: center;
+}
+
+.songControlList li {
+    user-select: none;
+    text-align: center;
+    width: 30%;
+    cursor: pointer;
+}
+
+.songControlList .controllButtons {
+    font-size: 2.7rem;
+}
+
+.songControlList .controllButtons:active,
+.shuffleSection ul li span:active {
+    font-size: 2.55rem;
+}
+
+
+
+/*  Bottom controll section */
+
+.bottomController {
+    border-top: 2px solid rgb(37 56 102);
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(233deg, red, #5f85b3, #2f3a58);
+    height: 18vw;
+    width: 100vw;
+    border-radius: 10rem;
+    justify-content: center;
+}
+
+.section {
+    width: 100%;
+    padding: 0px 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* Left section */
+.firstsection {}
+
+#bottomCntrlImage {
+    width: 12vw;
+    height: 12vw;
+    /* width: 50px;
+    height: 50px; */
+
+}
+
+#bottomControlImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+/* Right section */
+.secondSection {
+    flex-direction: column;
+    padding: 0px 10px;
+    width: 100%;
+}
+
+.bottomDuration {
+
+    padding-right: 7px;
+    padding-top: 7px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+#bottomProgress {
+    width: 95%;
+    height: 5px;
+    padding: 5px 0px;
+    margin-bottom: 3px;
+}
+
+.dura {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bottomTime {
+    color: white;
+    font-size: 12px;
+}
+
+/* Third section */
+.thirdSection {
+    padding-bottom: 9px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* box1 */
+.box1 {
+    width: 35%;
+}
+
+#bottomControllName {
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+/* box2 */
+#bottomSongControlList li {
+    align-items: center;
+    justify-content: center;
+}
+
+/* Controllers */
+.bottomControllButtons {
+    font-size: 1.4rem;
+    margin: 0px 4px;
+}
+
+#bottomRewind {}
+
+#bottomPlay {}
+
+#bottomNext {}
+
+
+
+
+@media screen and (max-width:1000px) {
+    .container {
+        display: block;
+    }
+
+    #song {
+        padding-bottom: 18vw;
+        width: -webkit-fill-available;
+    }
+
+    .controller {
+        display: none;
+    }
+
+    .bottomController {
+        background: linear-gradient(15deg, #ce4040, #b3bbcd, #182446);
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+    .container {
+        display: block;
+    }
+
+    .controller {
+        display: block;
+    }
+
+    .bottomController {
+        display: none;
+
+    }
+
+}
+
+@media screen and (min-width:550px) and (max-width:1000px) {
+    #song {
+        padding-bottom: 14vw;
+        width: -webkit-fill-available;
+    }
+
+    .bottomController {
+        height: 14vw;
+    }
+
+    .bottomControllButtons {
+        font-size: 1.9rem;
+        margin: 0px 4px;
+    }
+
+}
+
+
+@media screen and (max-width:365px) {
+    .bottomController {
+        height: 30vw;
+    }
+
+    #song {
+        padding-bottom: 30vw;
+    }
+
+    .bottomControllButtons {
+        font-size: 1rem;
+        margin: 0px 4px;
+    }
+}

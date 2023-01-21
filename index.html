@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganna Player</title>
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="flex">
+            <li class="flex">
+                <img id="logoImg" src="./img/logo.png" alt="">
+            </li>
+            <li>
+                <h1>Ganna Player</h1>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="container">
+            <!-- Song list items -->
+            <div id="song" class="song flex"></div>
+            <!-- Controll section -->
+            <div class="controller flex">
+                <h1>
+                    <marquee class="controllName" id="controllName" scrollamount="5" behavior="" direction="horizontal">
+                    </marquee>
+                </h1>
+                <div class="cntrl flex">
+                    <div class="togglePlay flex">
+                        <div id="cntrlImage" class="cntrlImage"><img class="controlImg" src="./img/logo.png
+                            " alt="">
+                        </div>
+                        <div class="shuffleSection">
+                            <ul>
+                                <li id="flex" class="flex"><span id="shuffle" class="shuffle">🔀</span></li>
+                            </ul>
+                        </div>
+                        <input value="0" type="range" name="" class="progress" id="progress">
+                        <div class="duration flex">
+                            <span class="time currTime" id="currTime">00:00</span>
+                            <span class="time totalTime" id="totalTime">00:00</span>
+                        </div>
+                        <div class="songControl">
+                            <ul class="songControlList flex">
+                                <li><span class="rewind controllButtons">⏮️</span></li>
+                                <li><span class="play controllButtons">▶️</span></li>
+                                <li><span class="next controllButtons">⏭️</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomController flex">
+                <div class="section flex">
+                    <div id="firstSection">
+                        <div id="bottomCntrlImage" class="cntrlImage">
+                            <img id="bottomControlImg" src="./img/logo.png"">
+                        </div>
+                    </div>
+
+                    <div class="secondSection flex">
+
+                        <div class="bottomDuration flex">
+
+                            <input class="progress" value="0" type="range" name="" id="bottomProgress">
+                            <div class="dura flex">
+                                <span class="currTime bottomTime">00:00</span>
+                                <span class="totalTime bottomTime">00:00</span>
+                            </div>
+                        </div>
+                        <div class="thirdSection flex">
+                            <div class="box1">
+                                <h1>
+                                    <marquee class="controllName" id="bottomControllName" scrollamount="3" behavior=""
+                                        direction="horizontal"></marquee>
+                                </h1>
+                            </div>
+                            <div class="box2">
+                                <div id="bottomSongControl" class="songControl">
+                                    <!-- music controllers -->
+                                    <ul id="bottomSongControlList" class="songControlList flex">
+                                        <li class="flex"><span id="bottomRewind"
+                                                class="rewind bottomControllButtons">⏮️</span></li>
+                                        <li class="flex"><span id="bottomPlay"
+                                                class="play bottomControllButtons">▶️</span></li>
+                                        <li class="flex"><span id="bottomNext"
+                                                class="next bottomControllButtons">⏭️</span></li>
+                                        <li class="flex"><span id="bottomShuffle"
+                                                class="shuffle bottomControllButtons">🔀</span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
